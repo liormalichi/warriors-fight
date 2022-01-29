@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.homePage > *,
+.endPage > * {
+  margin-top: 30px;
+}
+
+.endPag {
+  height: 100vh;
+}
+.pc {
+  grid-area: pc;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 315px 20px 315px;
+  grid-template-areas:
+    "pcPoints pcCard pc"
+    "none button none2"
+    "playerPoints playerCard player";
+  justify-items: center;
+  align-items: center;
+}
+.none {
+  grid-area: none;
+}
+.none2 {
+  grid-area: none2;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 217, 255, 0.76),
+    rgba(0, 4, 255, 0.705)
+  );
+  width: 190px;
+  height: 280px;
+  margin: 10px auto;
+  border-radius: 10%;
+}
+
+.innerCardPc {
+  grid-area: pcCard;
+  align-self: center;
+}
+
+.innerCardPlayer {
+  grid-area: playerCard;
+}
+
+.playerPoints {
+  grid-area: playerPoints;
+}
+
+.pcPoints {
+  grid-area: pcPoints;
+}
+
+.playerPoints,
+.pcPoints,
+.player,
+.pc,
+.result {
+  font-weight: 900px;
+  font-size: 80px;
+}
+.player {
+  grid-area: player;
+}
+
+.innerCard {
+  background-color: royalblue;
+}
+
+button {
+  grid-area: button;
+  padding-top: 5px;
+}
+
+.innerCardPlayer,
+.innerCardPc {
+  font-weight: 700px;
+  font-size: 60px;
+}
+.btn {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: var(--inv);
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: var(--def);
+  transition-delay: 0.5s;
+}
+
+.btn:hover:before {
+  transition-delay: 0s;
+}
+
+.btn:hover:after {
+  background: var(--inv);
+  transition-delay: 0.35s;
+}
+
+/* From Left */
+
+.btn:before,
+.btn:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.btn:before {
+  right: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.btn:after {
+  left: 0;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+}
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  --def: #96b7c4;
+  --inv: #fff;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-25deg, #616161 0%, #96b7c4 100%);
+}
+
+html {
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+}
+.img {
+  position: absolute;
+  background-image: url("../src/rsz_spartan.png");
+  height: 60vh;
+  width: 20vw;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 10px;
+  right: 10px;
+}
+
+.img_left {
+  position: absolute;
+  background-image: url("../src/rsz_spartan.png");
+  height: 60vh;
+  width: 20vw;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 10px;
+  left: 10px;
+  transform: rotateY(180deg);
+}
+
+.title1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  color: rgb(104, 74, 68);
+  letter-spacing: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.title2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: tomato;
+  letter-spacing: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 60px;
+    letter-spacing: 6px;
+  }
+
+  
+  .title2 {
+
+    font-size: 50px;
+  }
+}
