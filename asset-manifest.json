@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/warriors-fight/static/css/main.28e08417.chunk.css",
+    "main.js": "/warriors-fight/static/js/main.3cb8e48c.chunk.js",
+    "main.js.map": "/warriors-fight/static/js/main.3cb8e48c.chunk.js.map",
+    "runtime-main.js": "/warriors-fight/static/js/runtime-main.b3cf8a48.js",
+    "runtime-main.js.map": "/warriors-fight/static/js/runtime-main.b3cf8a48.js.map",
+    "static/js/2.05f7f769.chunk.js": "/warriors-fight/static/js/2.05f7f769.chunk.js",
+    "static/js/2.05f7f769.chunk.js.map": "/warriors-fight/static/js/2.05f7f769.chunk.js.map",
+    "index.html": "/warriors-fight/index.html",
+    "static/css/main.28e08417.chunk.css.map": "/warriors-fight/static/css/main.28e08417.chunk.css.map",
+    "static/js/2.05f7f769.chunk.js.LICENSE.txt": "/warriors-fight/static/js/2.05f7f769.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/warriors-fight/static/media/rsz_spartan.e60b5608.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3cf8a48.js",
+    "static/js/2.05f7f769.chunk.js",
+    "static/css/main.28e08417.chunk.css",
+    "static/js/main.3cb8e48c.chunk.js"
+  ]
+}
